@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muscular System 3D</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Muscular<br>System</h1>
+<p>More than 600 skeletal muscles help you move, lift, and function. Drag the 3D model to rotate it, and click a muscle to learn about its function.</p>
+</header><section>
+<div class="viewer">
+<div class="stage">
+<canvas id="cv" aria-label="Interactive 3D model of the muscular system"></canvas>
+<div class="ctl">
+<button class="b" id="bf">Front</button><button class="b" id="bb">Back</button><button class="b on" id="ba">Auto-rotate</button>
+</div>
+<div class="hint" id="ld" style="top:45%;bottom:auto;left:0;right:0;text-align:center;font-size:.95rem">Loading 3D model…</div>
+<div class="hint">Drag to rotate · Scroll to zoom · Click a muscle</div>
+</div><div class="panel" aria-live="polite">
+<p class="tag" id="loc">Select a muscle</p>
+<h2 id="nm">Click the model</h2><dl>
+<div>
+<dt>Function</dt>
+<dd id="fn">Click a red muscle on the 3D model, or select one from the list below.</dd>
+</div><div>
+<dt>Exercise for this muscle</dt>
+<dd id="ex">—</dd>
+</div>
+</dl><div class="chips" id="chips"></div>
+</div>
+</div>
+</section><section>
+<h2>Three Types of Muscle</h2><div class="types">
+<div class="t" style="--c:#d62839">
+<h3>Skeletal</h3>
+<p>Voluntary muscles attached to bones. You control them when walking, jumping, or lifting.</p>
+</div><div class="t" style="--c:#2a7fba">
+<h3>Smooth</h3>
+<p>Involuntary muscles found in the walls of the stomach, intestines, and blood vessels. They work automatically.</p>
+</div><div class="t" style="--c:#e08a1e">
+<h3>Cardiac</h3>
+<p>Involuntary muscle found only in the heart. It continuously contracts to keep the heart beating.</p>
+</div>
+</div>
+</section><section>
+<h2>Did You Know?</h2><div class="facts">
+<div class="f">
+<b>600+</b>
+<span>skeletal muscles in the human body</span>
+</div><div class="f">
+<b>Glutes</b>
+<span>The gluteus maximus is the largest muscle in the human body.</span>
+</div><div class="f">
+<b>Pull Only</b>
+<span>Muscles can only pull by contracting; they cannot push. That is why they work in pairs.</span>
+</div><div class="f">
+<b>Warm-up</b>
+<span>Warm up for 5–10 minutes before exercising to help reduce the risk of cramps and injury.</span>
+</div>
+</div>
+
+</section></div><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script><script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script><script src="script.js"></script></body>
+</html>
